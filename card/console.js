@@ -1,10 +1,10 @@
 
 function sayHello(name){
-    console.log(`Hi ${this.name}`);
+    return `Hi ${name} your welcome ☺`;
 
 }
 
-const waitForUser = prompt(`what you name?`);
-
-window.alert(sayHello(waitForUser));
+const waitForUser = window.prompt(`what you name?`);
+const sayThat = sayHello(waitForUser);
+window.alert(sayThat);
 
